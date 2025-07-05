@@ -1,12 +1,8 @@
+import { Link } from 'react-router-dom';
 import { Mail, Phone } from 'lucide-react';
 import boostrdLogo from '@/assets/boostrd-logo.png';
 
 const Footer = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   const currentYear = new Date().getFullYear();
 
   return (
@@ -15,11 +11,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <img 
-              src={boostrdLogo} 
-              alt="BoostRD" 
-              className="h-12 w-auto mb-6 filter invert"
-            />
+            <Link to="/">
+              <img 
+                src={boostrdLogo} 
+                alt="BoostRD" 
+                className="h-12 w-auto mb-6 filter invert"
+              />
+            </Link>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
               Australia's leading R&D Tax Incentive specialists. We help innovative businesses 
               unlock their full potential through expert guidance and proven results.
@@ -40,36 +38,36 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-6">Quick Links</h4>
             <div className="space-y-3">
-              <button 
-                onClick={() => scrollToSection('services')}
+              <Link 
+                to="/services"
                 className="block text-gray-300 hover:text-primary-light transition-colors"
               >
                 Our Services
-              </button>
-              <button 
-                onClick={() => scrollToSection('about')}
+              </Link>
+              <Link 
+                to="/about"
                 className="block text-gray-300 hover:text-primary-light transition-colors"
               >
                 About Us
-              </button>
-              <button 
-                onClick={() => scrollToSection('case-studies')}
+              </Link>
+              <Link 
+                to="/case-studies"
                 className="block text-gray-300 hover:text-primary-light transition-colors"
               >
                 Case Studies
-              </button>
-              <button 
-                onClick={() => scrollToSection('testimonials')}
+              </Link>
+              <Link 
+                to="/testimonials"
                 className="block text-gray-300 hover:text-primary-light transition-colors"
               >
                 Testimonials
-              </button>
-              <button 
-                onClick={() => scrollToSection('faq')}
+              </Link>
+              <Link 
+                to="/faq"
                 className="block text-gray-300 hover:text-primary-light transition-colors"
               >
                 FAQ
-              </button>
+              </Link>
             </div>
           </div>
 
