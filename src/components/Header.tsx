@@ -13,15 +13,15 @@ const Header = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border/50 z-50">
+    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-xl border-b border-border/30 z-50 shadow-[var(--shadow-card)]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex-shrink-0">
+          <Link to="/" className="flex-shrink-0 hover-lift">
             <img 
               src={boostrdLogo} 
               alt="BoostRD" 
-              className="h-10 md:h-12 w-auto"
+              className="h-10 md:h-12 w-auto transition-all duration-300 hover:scale-110"
             />
           </Link>
 
@@ -29,50 +29,55 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <Link 
               to="/services"
-              className={`transition-colors font-medium ${
+              className={`transition-all duration-300 font-semibold relative group ${
                 isActive('/services') ? 'text-primary' : 'text-foreground hover:text-primary'
               }`}
             >
               Services
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link 
               to="/about"
-              className={`transition-colors font-medium ${
+              className={`transition-all duration-300 font-semibold relative group ${
                 isActive('/about') ? 'text-primary' : 'text-foreground hover:text-primary'
               }`}
             >
               About Us
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link 
               to="/case-studies"
-              className={`transition-colors font-medium ${
+              className={`transition-all duration-300 font-semibold relative group ${
                 isActive('/case-studies') ? 'text-primary' : 'text-foreground hover:text-primary'
               }`}
             >
               Case Studies
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link 
               to="/testimonials"
-              className={`transition-colors font-medium ${
+              className={`transition-all duration-300 font-semibold relative group ${
                 isActive('/testimonials') ? 'text-primary' : 'text-foreground hover:text-primary'
               }`}
             >
               Testimonials
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link 
               to="/faq"
-              className={`transition-colors font-medium ${
+              className={`transition-all duration-300 font-semibold relative group ${
                 isActive('/faq') ? 'text-primary' : 'text-foreground hover:text-primary'
               }`}
             >
               FAQ
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:flex">
             <Link to="/contact">
-              <Button className="btn-premium">
+              <Button className="btn-premium hover-glow">
                 Get Started
               </Button>
             </Link>

@@ -9,120 +9,161 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-[var(--gradient-hero)]">
-          <div className="absolute inset-0 bg-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-transparent to-primary/20"></div>
           <img 
             src={heroBg} 
             alt="Professional team" 
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-30 parallax-bg"
           />
+          {/* Animated Particles */}
+          <div className="absolute inset-0">
+            <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary-light rounded-full animate-float opacity-60"></div>
+            <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-white rounded-full animate-float opacity-40" style={{animationDelay: '2s'}}></div>
+            <div className="absolute bottom-1/3 left-1/2 w-3 h-3 bg-primary-light/50 rounded-full animate-float" style={{animationDelay: '4s'}}></div>
+          </div>
         </div>
         
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <div className="max-w-4xl mx-auto animate-fade-up">
-            <h1 className="hero-text mb-6">
-              Maximise Your{' '}
-              <span className="text-gradient bg-gradient-to-r from-primary-light to-primary-lighter bg-clip-text text-transparent">
-                R&D Tax Benefits
-              </span>
-            </h1>
+          <div className="max-w-5xl mx-auto">
+            <div className="animate-fade-up">
+              <h1 className="hero-text mb-8">
+                Maximise Your{' '}
+                <span className="text-gradient relative">
+                  R&D Tax Benefits
+                  <div className="absolute -inset-2 bg-[var(--gradient-glow)] rounded-lg opacity-30 blur-xl animate-glow"></div>
+                </span>
+              </h1>
+            </div>
             
-            <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed max-w-3xl mx-auto">
-              Australia's leading R&D Tax Incentive specialists. We help innovative businesses 
-              unlock millions in government incentives while ensuring full compliance.
-            </p>
+            <div className="animate-slide-in" style={{animationDelay: '0.3s'}}>
+              <p className="text-xl md:text-2xl lg:text-3xl mb-10 text-gray-100 leading-relaxed max-w-4xl mx-auto font-light">
+                Australia's leading R&D Tax Incentive specialists. We help innovative businesses 
+                unlock <span className="text-primary-light font-semibold">millions</span> in government incentives while ensuring full compliance.
+              </p>
+            </div>
 
-            <div className="flex flex-wrap justify-center gap-6 mb-10 text-sm md:text-base">
+            <div className="animate-scale-in grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-12 max-w-3xl mx-auto" style={{animationDelay: '0.6s'}}>
               {[
-                'Maximise Your Claim',
-                'Expert Compliance',
-                'Proven Track Record',
-                'Dedicated Support'
-              ].map((benefit) => (
-                <div key={benefit} className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-primary-light" />
-                  <span>{benefit}</span>
+                { icon: '🎯', text: 'Maximise Claims' },
+                { icon: '🛡️', text: 'Expert Compliance' },
+                { icon: '🏆', text: 'Proven Results' },
+                { icon: '🤝', text: 'Dedicated Support' }
+              ].map((benefit, index) => (
+                <div key={benefit.text} className="card-premium card-hover p-4 md:p-6 bg-white/10 border-white/20 text-center" style={{animationDelay: `${0.8 + index * 0.1}s`}}>
+                  <div className="text-2xl md:text-3xl mb-2">{benefit.icon}</div>
+                  <div className="text-sm md:text-base font-medium">{benefit.text}</div>
                 </div>
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="animate-fade-up flex flex-col sm:flex-row gap-6 justify-center items-center" style={{animationDelay: '1s'}}>
               <Link to="/contact">
-                <Button className="btn-premium text-lg px-10 py-5">
-                  Get Free Assessment
+                <Button className="btn-premium text-xl px-12 py-6 group">
+                  <span className="relative z-10">Get Free Assessment</span>
+                  <div className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-100 transition-transform duration-500"></div>
                 </Button>
               </Link>
               <Link to="/services">
                 <Button 
                   variant="outline"
-                  className="bg-white/10 border-white/30 text-white hover:bg-white/20 px-8 py-5"
+                  className="bg-white/10 border-2 border-white/40 text-white hover:bg-white/20 hover:border-white/60 px-10 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105"
                 >
-                  Learn More
+                  Explore Services
                 </Button>
               </Link>
             </div>
 
-            <div className="mt-12 text-gray-300">
-              <p className="text-sm mb-4">Trusted by 500+ Australian businesses</p>
-              <div className="flex justify-center items-center gap-8 text-2xl font-bold">
-                <span>$50M+</span>
-                <span className="text-primary-light">•</span>
-                <span>In Claims</span>
-                <span className="text-primary-light">•</span>
-                <span>98% Success Rate</span>
+            <div className="animate-fade-up mt-16 text-gray-200" style={{animationDelay: '1.3s'}}>
+              <p className="text-lg mb-6 opacity-90">Trusted by 500+ Australian businesses</p>
+              <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+                <div className="text-center">
+                  <div className="text-3xl md:text-4xl font-black text-primary-light mb-2 animate-glow">$50M+</div>
+                  <div className="text-sm font-medium opacity-80">In Claims</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl md:text-4xl font-black text-primary-light mb-2 animate-glow">98%</div>
+                  <div className="text-sm font-medium opacity-80">Success Rate</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl md:text-4xl font-black text-primary-light mb-2 animate-glow">15+</div>
+                  <div className="text-sm font-medium opacity-80">Years Experience</div>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+        {/* Enhanced Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <div className="flex flex-col items-center animate-bounce">
+            <div className="text-white/60 text-sm mb-2 font-medium">Scroll to explore</div>
+            <div className="w-8 h-12 border-2 border-white/40 rounded-full flex justify-center relative">
+              <div className="w-1.5 h-4 bg-white/60 rounded-full mt-2 animate-pulse"></div>
+              <div className="absolute -bottom-2 w-0.5 h-0.5 bg-white/40 rounded-full animate-ping"></div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quick Overview */}
-      <section className="section-premium bg-[var(--gradient-section)]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="section-heading text-gradient mb-6">
+      {/* Enhanced Overview Section */}
+      <section className="section-premium bg-[var(--gradient-section)] relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-10 left-10 w-20 h-20 border-2 border-primary rounded-full animate-float"></div>
+          <div className="absolute top-1/3 right-20 w-16 h-16 bg-primary/20 rounded-lg rotate-45 animate-float" style={{animationDelay: '2s'}}></div>
+          <div className="absolute bottom-20 left-1/4 w-12 h-12 border-2 border-primary/30 rounded-lg animate-float" style={{animationDelay: '4s'}}></div>
+        </div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-20 animate-fade-up">
+            <h2 className="section-heading text-gradient mb-8">
               Why Choose BoostRD?
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We're Australia's most trusted R&D tax specialists with a proven track record of success.
+            <p className="text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">
+              We're Australia's most trusted R&D tax specialists with a proven track record of 
+              <span className="text-primary font-semibold"> exceptional success</span>.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="card-premium p-8 text-center">
-              <div className="w-16 h-16 bg-[var(--gradient-primary)] rounded-xl flex items-center justify-center mx-auto mb-6">
-                <Users className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Expert Team</h3>
-              <p className="text-muted-foreground">
-                Specialist R&D tax consultants with deep industry knowledge and ATO expertise.
-              </p>
-            </div>
-
-            <div className="card-premium p-8 text-center">
-              <div className="w-16 h-16 bg-[var(--gradient-primary)] rounded-xl flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Proven Results</h3>
-              <p className="text-muted-foreground">
-                $50M+ in successful claims with a 98% success rate across all industries.
-              </p>
-            </div>
-
-            <div className="card-premium p-8 text-center">
-              <div className="w-16 h-16 bg-[var(--gradient-primary)] rounded-xl flex items-center justify-center mx-auto mb-6">
-                <Award className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Full Service</h3>
-              <p className="text-muted-foreground">
-                End-to-end support from initial assessment to final submission and beyond.
-              </p>
-            </div>
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+            {[
+              {
+                icon: Users,
+                title: 'Expert Team',
+                description: 'Specialist R&D tax consultants with deep industry knowledge and ATO expertise.',
+                gradient: 'from-blue-500 to-teal-500'
+              },
+              {
+                icon: TrendingUp,
+                title: 'Proven Results',
+                description: '$50M+ in successful claims with a 98% success rate across all industries.',
+                gradient: 'from-teal-500 to-green-500'
+              },
+              {
+                icon: Award,
+                title: 'Full Service',
+                description: 'End-to-end support from initial assessment to final submission and beyond.',
+                gradient: 'from-purple-500 to-pink-500'
+              }
+            ].map((item, index) => {
+              const IconComponent = item.icon;
+              return (
+                <div key={item.title} className="card-premium card-hover p-10 text-center group animate-scale-in" style={{animationDelay: `${index * 0.2}s`}}>
+                  <div className={`w-20 h-20 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-500 shadow-[var(--shadow-premium)]`}>
+                    <IconComponent className="h-10 w-10 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-6 group-hover:text-primary transition-colors duration-300">{item.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed text-lg">
+                    {item.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-16 animate-fade-up" style={{animationDelay: '0.8s'}}>
             <Link to="/about">
-              <Button className="btn-premium">
-                Learn More About Us
+              <Button className="btn-premium text-xl px-12 py-6">
+                Discover Our Story
               </Button>
             </Link>
           </div>
