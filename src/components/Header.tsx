@@ -13,7 +13,7 @@ const Header = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-xl border-b border-border/30 z-50 shadow-[var(--shadow-card)]">
+    <header className="w-full bg-background border-b border-border/30 shadow-[var(--shadow-card)]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
