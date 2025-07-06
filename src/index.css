@@ -130,7 +130,7 @@
   }
 
   .hero-text {
-    @apply text-5xl md:text-6xl lg:text-8xl font-black leading-[0.9] tracking-tight;
+    @apply text-3xl md:text-4xl lg:text-5xl font-black leading-[0.9] tracking-tight;
     text-shadow: 0 4px 20px hsl(174 100% 29% / 0.3);
   }
 
