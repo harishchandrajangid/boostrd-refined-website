@@ -28,9 +28,9 @@ const Home = () => {
             <div className="animate-fade-up">
               <h1 className="hero-text mb-8">
                 Maximise Your{' '}
-                <span className="text-gradient relative">
-                  R&D Tax Benefits
-                  <div className="absolute -inset-2 bg-[var(--gradient-glow)] rounded-lg opacity-30 blur-xl animate-glow"></div>
+                <span className="text-white font-bold relative">
+                  R&D Benefits
+                  <div className="absolute -inset-2 bg-primary/30 rounded-lg opacity-50 blur-xl animate-glow"></div>
                 </span>
               </h1>
             </div>
