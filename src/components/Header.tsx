@@ -69,6 +69,19 @@ const Header = () => {
                 isActive('/faq') ? 'w-full' : 'w-0 group-hover:w-full'
               }`}></span>
             </Link>
+            <Link 
+              to="/rdti-questionnaire"
+              className={`relative px-4 py-2 font-semibold text-sm uppercase tracking-wider transition-all duration-300 group ${
+                isActive('/rdti-questionnaire') 
+                  ? 'text-primary' 
+                  : 'text-foreground/80 hover:text-foreground'
+              }`}
+            >
+              RDTI Questionnaire
+              <span className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 ${
+                isActive('/rdti-questionnaire') ? 'w-full' : 'w-0 group-hover:w-full'
+              }`}></span>
+            </Link>
           </nav>
 
           {/* CTA Button */}
@@ -121,6 +134,15 @@ const Header = () => {
                   }`}
                 >
                   FAQ
+                </Link>
+                <Link 
+                  to="/rdti-questionnaire"
+                  onClick={closeMenu}
+                  className={`text-left transition-all duration-300 font-semibold text-lg pb-2 border-b border-transparent ${
+                    isActive('/rdti-questionnaire') ? 'text-primary border-primary' : 'text-foreground hover:text-primary hover:border-primary/50'
+                  }`}
+                >
+                  RDTI Questionnaire
                 </Link>
                 <Link to="/contact" onClick={closeMenu} className="pt-4">
                   <Button className="bg-gradient-to-r from-primary to-accent text-white w-full py-4 rounded-xl font-bold text-base uppercase tracking-wider shadow-lg">

@@ -263,7 +263,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-medium">Call Us</div>
-                    <div className="text-gray-200">1300 BOOST RD</div>
+                    <div className="text-gray-200">0435754757</div>
                     <div className="text-sm text-gray-300">Mon-Fri 9AM-6PM AEST</div>
                   </div>
                 </div>
@@ -274,7 +274,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-medium">Email Us</div>
-                    <div className="text-gray-200">hello@boostrd.com.au</div>
+                    <div className="text-gray-200">info@boostrd.com.au</div>
                     <div className="text-sm text-gray-300">Response within 4 hours</div>
                   </div>
                 </div>
@@ -292,24 +292,6 @@ const Contact = () => {
               </div>
             </Card>
 
-            {/* Trust Indicators */}
-            <Card className="card-premium p-8 bg-white/10 border-white/20 text-center">
-              <h4 className="font-semibold mb-4">Why Choose BoostRD?</h4>
-              <div className="grid grid-cols-3 gap-4 text-sm">
-                <div>
-                  <div className="text-2xl font-bold text-primary-light">98%</div>
-                  <div>Success Rate</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-primary-light">$50M+</div>
-                  <div>Claims Processed</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-primary-light">15+</div>
-                  <div>Years Experience</div>
-                </div>
-              </div>
-            </Card>
           </div>
         </div>
       </div>

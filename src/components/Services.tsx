@@ -69,6 +69,16 @@ const Services = () => {
   return (
     <section id="services" className="section-premium bg-[var(--gradient-section)]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Understanding R&D Tax Incentive */}
+        <div className="bg-white/50 rounded-3xl p-8 md:p-12 mb-16">
+          <h2 className="subsection-heading text-center mb-6">Understanding R&D Tax Incentive (RDTI)</h2>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-muted-foreground leading-relaxed">
+              The R&D Tax Incentive (RDTI) is aimed at encouraging companies to invest in research and development by providing tax offsets to help cover some of the costs associated with eligible R&D activities. This incentive can significantly lower the financial burden of innovation, enabling businesses to engage in more R&D projects. Companies that qualify can claim a percentage of their R&D expenses as a tax rebate or offset, fostering innovation, boosting economic growth, and enhancing competitiveness. The incentive typically applies to various R&D activities, including experimental development, applied research, and related support activities.
+            </p>
+          </div>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="section-heading text-gradient mb-6">

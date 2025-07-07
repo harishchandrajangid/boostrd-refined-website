@@ -50,18 +50,13 @@ const About = () => {
             <h3 className="subsection-heading mb-6">Our Story</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Founded with a mission to democratise access to R&D tax incentives, BoostRD has grown 
-                to become Australia's leading specialist in this field. Our team combines deep technical 
-                expertise with practical business acumen to deliver exceptional results.
+                Welcome to BoostRD, your trusted consulting partner for R&D grants in Australia. With a proven record of assisting businesses of all sizes, we pride ourselves on our tailored approach to meet your unique needs.
               </p>
               <p>
-                We understand that innovation drives Australian business success, and the R&D Tax Incentive 
-                is a crucial mechanism for supporting that innovation. Our role is to ensure you capture 
-                every dollar you're entitled to while maintaining full compliance with government requirements.
+                Our dedicated team will work closely with you to your business model and assess your eligibility for successful grant applications.
               </p>
               <p>
-                With over $50 million in successful claims and a 98% success rate, we've established 
-                ourselves as the trusted partner for businesses across all industries.
+                Let us help you navigate the complexities of R&D funding and unlock your business's potential.
               </p>
             </div>
 
@@ -83,6 +78,36 @@ const About = () => {
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
               <div className="text-2xl font-bold text-primary">15+</div>
               <div className="text-sm text-muted-foreground">Years of Excellence</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Our Team Section */}
+        <div className="mb-20">
+          <h3 className="subsection-heading text-center mb-8">Our Team</h3>
+          <div className="bg-[var(--gradient-section)] rounded-3xl p-8 md:p-12">
+            <div className="text-muted-foreground leading-relaxed space-y-4">
+              <p>
+                BoostRD experts bring years of experience to the table, providing insightful and accurate advice throughout the process. Our team is dedicated to guiding you every step of the way, ensuring you have the support you need to navigate the complexities of R&D claims. Trust us to deliver the expertise you require for a successful outcome.
+              </p>
+              <p>
+                Boost R&D Pty Ltd is a Registered Tax Agent that has been approved to assist you with this tax-based program.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Why Choose Us Section */}
+        <div className="mb-20">
+          <h3 className="subsection-heading text-center mb-8">Why Choose Us?</h3>
+          <div className="bg-white/50 rounded-3xl p-8 md:p-12">
+            <div className="text-muted-foreground leading-relaxed space-y-4">
+              <p>
+                At BoostRD, we provide a comprehensive R&D Tax Incentive claim preparation service, managing every step from preparation to submission. Unlike firms that rely on junior staff, we prioritise quality by limiting the number of clients we work with, ensuring each project receives the dedicated attention it deserves.
+              </p>
+              <p>
+                Your claim will be managed by our experienced consultants with deep industry knowledge, providing direct access to senior staff for prompt responses and proactive support. We are committed to optimising your claim, addressing challenges, and minimising risks, ensuring accuracy and maximising your benefits.
+              </p>
             </div>
           </div>
         </div>
