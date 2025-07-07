@@ -119,8 +119,7 @@ const Home = () => {
               Why Choose BoostRD?
             </h2>
             <p className="text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">
-              We're Australia's most trusted R&D tax specialists with a proven track record of 
-              <span className="text-primary font-semibold"> exceptional success</span>.
+              With a strong track record of successful claims, we make R&D tax incentives simple, strategic, and stress-free.
             </p>
           </div>
 
@@ -134,8 +133,8 @@ const Home = () => {
               },
               {
                 icon: TrendingUp,
-                title: 'Proven Results',
-                description: '$50M+ in successful claims with a 98% success rate across all industries.',
+                title: 'Strong Track Record',
+                description: 'History of delivering accurate, compliant R&D claims.',
                 gradient: 'from-teal-500 to-green-500'
               },
               {
@@ -262,7 +261,7 @@ const Home = () => {
           <div className="text-center mb-20 animate-fade-up">
             <h2 className="section-heading text-gradient mb-8">Our Proven Process</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              A systematic approach refined over 15+ years to maximize your R&D tax benefits while ensuring full compliance.
+              Built on deep technical knowledge and regulatory insight, our approach ensures every R&D claim is both maximised and audit-ready.
             </p>
           </div>
 
@@ -289,7 +288,7 @@ const Home = () => {
               {
                 step: '04',
                 title: 'Submission & Support',
-                description: 'Professional submission to ATO with ongoing support, monitoring, and audit assistance if required.',
+                description: 'Lodgement with DISR with ongoing support and audit assistance if required.',
                 duration: 'Ongoing'
               }
             ].map((step, index) => (
@@ -314,48 +313,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Industry Expertise Section */}
-      <section className="section-premium bg-background relative">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20 animate-fade-up">
-            <h2 className="section-heading mb-8">Industry Expertise</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Deep industry knowledge across diverse sectors enables us to identify unique R&D opportunities 
-              and maximize your tax benefits.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { name: 'Manufacturing', icon: Factory, claims: '$12M+', companies: '80+' },
-              { name: 'Technology', icon: Zap, claims: '$18M+', companies: '120+' },
-              { name: 'Healthcare', icon: Shield, claims: '$8M+', companies: '45+' },
-              { name: 'Engineering', icon: TrendingUp, claims: '$15M+', companies: '95+' },
-              { name: 'Agriculture', icon: Globe, claims: '$6M+', companies: '35+' },
-              { name: 'Professional Services', icon: Briefcase, claims: '$4M+', companies: '60+' }
-            ].map((industry, index) => (
-              <div key={industry.name} className="card-premium card-hover p-6 group animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[var(--gradient-interactive)] rounded-xl flex items-center justify-center mr-4">
-                    <industry.icon className="h-6 w-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-bold group-hover:text-primary transition-colors duration-300">{industry.name}</h3>
-                </div>
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div>
-                    <div className="text-2xl font-bold text-primary">{industry.claims}</div>
-                    <div className="text-sm text-muted-foreground">Claims Secured</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-primary">{industry.companies}</div>
-                    <div className="text-sm text-muted-foreground">Companies Helped</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

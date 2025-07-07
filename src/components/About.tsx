@@ -87,22 +87,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
-          {stats.map((stat, index) => {
-            const IconComponent = stat.icon;
-            return (
-              <Card key={index} className="card-premium text-center p-8">
-                <div className="w-16 h-16 bg-[var(--gradient-primary)] rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <IconComponent className="h-8 w-8 text-white" />
-                </div>
-                <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
-                <div className="font-semibold mb-1">{stat.label}</div>
-                <div className="text-sm text-muted-foreground">{stat.desc}</div>
-              </Card>
-            );
-          })}
-        </div>
 
         {/* Values */}
         <div className="bg-[var(--gradient-section)] rounded-3xl p-8 md:p-12">
@@ -124,10 +108,12 @@ const About = () => {
         {/* Mission Statement */}
         <div className="text-center mt-16 bg-white/50 rounded-2xl p-8 md:p-12">
           <h3 className="subsection-heading mb-6">Our Mission</h3>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            "To empower Australian businesses to maximise their R&D tax benefits through expert guidance, 
-            ensuring every innovation dollar is recognised and every compliance requirement is met with precision and care."
-          </p>
+          <div className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            <p className="mb-4">We guide your claim with expert flair,</p>
+            <p className="mb-4">So every dollar gets its share.</p>
+            <p className="mb-4">Innovation gets the credit it's due,</p>
+            <p>And compliance? We've got that too.</p>
+          </div>
         </div>
       </div>
     </section>

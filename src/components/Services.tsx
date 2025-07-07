@@ -7,12 +7,12 @@ const Services = () => {
     {
       icon: FileText,
       title: 'R&D Technical Reports',
-      description: 'Comprehensive technical documentation that demonstrates compliance with government R&D criteria and maximises your claim potential.',
+      description: 'Comprehensive technical documentation that demonstrates compliance with government R&D criteria legislation and maximises your claim potential.',
       features: [
         'Detailed technical analysis',
         'Compliance documentation',
         'Risk assessment',
-        'Government liaison'
+        'DISR/ATO liaison'
       ]
     },
     {
@@ -28,11 +28,11 @@ const Services = () => {
     },
     {
       icon: Users,
-      title: 'Registration & Filing',
-      description: 'Complete registration and filing services with AusIndustry and the ATO, ensuring accuracy and timely submission.',
+      title: 'Lodgement',
+      description: 'Complete registration and preparation of ATO Schedule for company tax return, ensuring accuracy and timely submission.',
       features: [
-        'AusIndustry registration',
-        'ATO filing assistance',
+        'DISR registration',
+        'Preparation of ATO schedule',
         'Deadline management',
         'Compliance monitoring'
       ]
@@ -40,7 +40,7 @@ const Services = () => {
     {
       icon: Shield,
       title: 'Compliance Assurance',
-      description: 'Ongoing compliance support and audit preparation to protect your R&D claims and maintain government relationships.',
+      description: 'Proactive compliance and audit support to ensure your claims withstand scrutiny.',
       features: [
         'Audit preparation',
         'Documentation management',

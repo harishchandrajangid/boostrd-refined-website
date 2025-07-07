@@ -57,32 +57,6 @@ const Header = () => {
               }`}></span>
             </Link>
             <Link 
-              to="/case-studies"
-              className={`relative px-4 py-2 font-semibold text-sm uppercase tracking-wider transition-all duration-300 group ${
-                isActive('/case-studies') 
-                  ? 'text-primary' 
-                  : 'text-foreground/80 hover:text-foreground'
-              }`}
-            >
-              Case Studies
-              <span className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 ${
-                isActive('/case-studies') ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
-            </Link>
-            <Link 
-              to="/testimonials"
-              className={`relative px-4 py-2 font-semibold text-sm uppercase tracking-wider transition-all duration-300 group ${
-                isActive('/testimonials') 
-                  ? 'text-primary' 
-                  : 'text-foreground/80 hover:text-foreground'
-              }`}
-            >
-              Testimonials
-              <span className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 ${
-                isActive('/testimonials') ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
-            </Link>
-            <Link 
               to="/faq"
               className={`relative px-4 py-2 font-semibold text-sm uppercase tracking-wider transition-all duration-300 group ${
                 isActive('/faq') 
@@ -138,24 +112,6 @@ const Header = () => {
                   }`}
                 >
                   About Us
-                </Link>
-                <Link 
-                  to="/case-studies"
-                  onClick={closeMenu}
-                  className={`text-left transition-all duration-300 font-semibold text-lg pb-2 border-b border-transparent ${
-                    isActive('/case-studies') ? 'text-primary border-primary' : 'text-foreground hover:text-primary hover:border-primary/50'
-                  }`}
-                >
-                  Case Studies
-                </Link>
-                <Link 
-                  to="/testimonials"
-                  onClick={closeMenu}
-                  className={`text-left transition-all duration-300 font-semibold text-lg pb-2 border-b border-transparent ${
-                    isActive('/testimonials') ? 'text-primary border-primary' : 'text-foreground hover:text-primary hover:border-primary/50'
-                  }`}
-                >
-                  Testimonials
                 </Link>
                 <Link 
                   to="/faq"
