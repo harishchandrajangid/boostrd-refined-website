@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Accordion,
   AccordionContent,
@@ -108,20 +109,20 @@ const FAQ = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              onClick={() => scrollToSection('contact')}
-              className="btn-premium"
-            >
-              <MessageSquare className="mr-2 h-4 w-4" />
-              Ask Our Experts
-            </Button>
-            <Button 
-              variant="outline"
-              onClick={() => scrollToSection('services')}
-              className="border-primary text-primary hover:bg-primary hover:text-white"
-            >
-              Learn About Our Services
-            </Button>
+            <Link to="/contact">
+              <Button className="btn-premium">
+                <MessageSquare className="mr-2 h-4 w-4" />
+                Ask Our Experts
+              </Button>
+            </Link>
+            <Link to="/services">
+              <Button 
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-white"
+              >
+                Learn About Our Services
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -129,33 +130,21 @@ const FAQ = () => {
         <div className="mt-12 text-center">
           <h4 className="font-semibold mb-4">Popular Resources</h4>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <button 
-              className="text-primary hover:underline"
-              onClick={() => scrollToSection('services')}
-            >
+            <Link to="/rdti-questionnaire" className="text-primary hover:underline">
               R&D Eligibility Check
-            </button>
+            </Link>
             <span className="text-muted-foreground">•</span>
-            <button 
-              className="text-primary hover:underline"
-              onClick={() => scrollToSection('case-studies')}
-            >
-              Success Stories
-            </button>
+            <Link to="/services" className="text-primary hover:underline">
+              Our Services
+            </Link>
             <span className="text-muted-foreground">•</span>
-            <button 
-              className="text-primary hover:underline"
-              onClick={() => scrollToSection('about')}
-            >
+            <Link to="/about" className="text-primary hover:underline">
               About BoostRD
-            </button>
+            </Link>
             <span className="text-muted-foreground">•</span>
-            <button 
-              className="text-primary hover:underline"
-              onClick={() => scrollToSection('contact')}
-            >
+            <Link to="/contact" className="text-primary hover:underline">
               Free Consultation
-            </button>
+            </Link>
           </div>
         </div>
       </div>
