@@ -36,7 +36,7 @@ const Home = () => {
             </div>
             
             <div className="animate-slide-in" style={{animationDelay: '0.3s'}}>
-              <p className="text-xl md:text-2xl lg:text-3xl mb-10 text-gray-100 leading-relaxed max-w-4xl mx-auto font-light">
+              <p className="text-xl md:text-2xl lg:text-3xl mb-10 text-foreground/90 leading-relaxed max-w-4xl mx-auto font-light">
                 Australia's leading R&D Tax Incentive specialists. We help innovative businesses 
                 unlock <span className="text-primary-light font-semibold">millions</span> in government incentives while ensuring full compliance.
               </p>

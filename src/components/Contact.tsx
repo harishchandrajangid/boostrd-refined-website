@@ -19,7 +19,7 @@ const Contact = () => {
           <h2 className="section-heading mb-6">
             Get In Touch
           </h2>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
             Ready to unlock your R&D tax benefits? Contact us today to start your journey towards maximizing your business innovation potential.
           </p>
         </div>
@@ -35,15 +35,15 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold mb-2">Email Us</h3>
-                  <p className="text-gray-200">Get expert advice via email</p>
+                  <p className="text-foreground/70">Get expert advice via email</p>
                 </div>
               </div>
               <div className="space-y-4">
                 <div className="text-2xl font-semibold text-primary-light">info@boostrd.com.au</div>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-foreground/80 leading-relaxed">
                   Send us your R&D queries and we'll provide detailed guidance on your eligibility and potential benefits.
                 </p>
-                <div className="flex items-center gap-2 text-sm text-gray-300">
+                <div className="flex items-center gap-2 text-sm text-foreground/70">
                   <Clock className="h-4 w-4" />
                   <span>Response within 4 hours</span>
                 </div>
@@ -64,15 +64,15 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold mb-2">Call Us</h3>
-                  <p className="text-gray-200">Speak directly with our experts</p>
+                  <p className="text-foreground/70">Speak directly with our experts</p>
                 </div>
               </div>
               <div className="space-y-4">
                 <div className="text-2xl font-semibold text-primary-light">0435754757</div>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-foreground/80 leading-relaxed">
                   Get immediate answers to your R&D tax questions and discuss your specific business needs.
                 </p>
-                <div className="flex items-center gap-2 text-sm text-gray-300">
+                <div className="flex items-center gap-2 text-sm text-foreground/70">
                   <Clock className="h-4 w-4" />
                   <span>Mon-Fri 9AM-6PM AEST</span>
                 </div>
@@ -95,21 +95,21 @@ const Contact = () => {
                   <User className="h-8 w-8 text-white" />
                 </div>
                 <h4 className="font-semibold mb-2">Expert Consultation</h4>
-                <p className="text-gray-300 text-sm">Direct access to experienced R&D tax specialists</p>
+                <p className="text-foreground/80 text-sm">Direct access to experienced R&D tax specialists</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Building className="h-8 w-8 text-white" />
                 </div>
                 <h4 className="font-semibold mb-2">Tailored Solutions</h4>
-                <p className="text-gray-300 text-sm">Customized approach based on your business needs</p>
+                <p className="text-foreground/80 text-sm">Customized approach based on your business needs</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <MessageSquare className="h-8 w-8 text-white" />
                 </div>
                 <h4 className="font-semibold mb-2">Clear Guidance</h4>
-                <p className="text-gray-300 text-sm">Plain English explanations of complex R&D requirements</p>
+                <p className="text-foreground/80 text-sm">Plain English explanations of complex R&D requirements</p>
               </div>
             </div>
           </Card>

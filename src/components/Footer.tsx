@@ -18,7 +18,7 @@ const Footer = () => {
                 className="h-12 w-auto mb-6 filter invert"
               />
             </Link>
-            <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
+            <p className="text-foreground/80 leading-relaxed mb-6 max-w-md">
               Australia's leading R&D Tax Incentive specialists. We help innovative businesses 
               unlock their full potential through expert guidance and proven results.
             </p>
@@ -40,19 +40,19 @@ const Footer = () => {
             <div className="space-y-3">
               <Link 
                 to="/services"
-                className="block text-gray-300 hover:text-primary-light transition-colors"
+                className="block text-foreground/80 hover:text-primary-light transition-colors"
               >
                 Our Services
               </Link>
               <Link 
                 to="/about"
-                className="block text-gray-300 hover:text-primary-light transition-colors"
+                className="block text-foreground/80 hover:text-primary-light transition-colors"
               >
                 About Us
               </Link>
               <Link 
                 to="/contact"
-                className="block text-gray-300 hover:text-primary-light transition-colors"
+                className="block text-foreground/80 hover:text-primary-light transition-colors"
               >
                 Contact
               </Link>
@@ -62,7 +62,7 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h4 className="font-semibold mb-6">Services</h4>
-            <div className="space-y-3 text-gray-300">
+            <div className="space-y-3 text-foreground/80">
               <div>R&D Technical Reports</div>
               <div>Expenditure Identification</div>
               <div>Registration & Filing</div>
@@ -73,17 +73,17 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-700 pt-8">
+        <div className="border-t border-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-gray-400">
+            <div className="text-sm text-foreground/70">
               © {currentYear} Boost R&D Pty Ltd. All rights reserved. | ABN: 49 680 525 115 | ACN: 680 525 115
             </div>
           </div>
         </div>
 
         {/* Trust Badges */}
-        <div className="mt-8 pt-8 border-t border-gray-700">
-          <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-400">
+        <div className="mt-8 pt-8 border-t border-foreground/20">
+          <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-foreground/70">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-primary-light rounded-full"></div>
               <span>R&D Tax Specialists</span>
