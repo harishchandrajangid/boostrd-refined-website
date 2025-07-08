@@ -25,11 +25,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-primary-light" />
-                <span>1300 BOOST RD</span>
+                <span>0435754757</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-primary-light" />
-                <span>hello@boostrd.com.au</span>
+                <span>info@boostrd.com.au</span>
               </div>
             </div>
           </div>
@@ -51,22 +51,10 @@ const Footer = () => {
                 About Us
               </Link>
               <Link 
-                to="/case-studies"
+                to="/contact"
                 className="block text-gray-300 hover:text-primary-light transition-colors"
               >
-                Case Studies
-              </Link>
-              <Link 
-                to="/testimonials"
-                className="block text-gray-300 hover:text-primary-light transition-colors"
-              >
-                Testimonials
-              </Link>
-              <Link 
-                to="/faq"
-                className="block text-gray-300 hover:text-primary-light transition-colors"
-              >
-                FAQ
+                Contact
               </Link>
             </div>
           </div>
@@ -88,18 +76,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-gray-400">
-              © {currentYear} BoostRD. All rights reserved. | ABN: 12 345 678 901
-            </div>
-            <div className="flex gap-6 text-sm text-gray-400">
-              <button className="hover:text-primary-light transition-colors">
-                Privacy Policy
-              </button>
-              <button className="hover:text-primary-light transition-colors">
-                Terms of Service
-              </button>
-              <button className="hover:text-primary-light transition-colors">
-                Disclaimer
-              </button>
+              © {currentYear} Boost R&D Pty Ltd. All rights reserved. | ABN: 49 680 525 115 | ACN: 680 525 115
             </div>
           </div>
         </div>

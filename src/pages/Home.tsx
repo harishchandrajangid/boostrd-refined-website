@@ -73,23 +73,6 @@ const Home = () => {
               </Link>
             </div>
 
-            <div className="animate-fade-up mt-16 text-gray-200" style={{animationDelay: '1.3s'}}>
-              <p className="text-lg mb-6 opacity-90">Trusted by 500+ Australian businesses</p>
-              <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-black text-primary-light mb-2 animate-glow">$50M+</div>
-                  <div className="text-sm font-medium opacity-80">In Claims</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-black text-primary-light mb-2 animate-glow">98%</div>
-                  <div className="text-sm font-medium opacity-80">Success Rate</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-black text-primary-light mb-2 animate-glow">15+</div>
-                  <div className="text-sm font-medium opacity-80">Years Experience</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         {/* Enhanced Scroll Indicator */}

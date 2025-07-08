@@ -22,7 +22,7 @@ const Header = () => {
               <img 
                 src={boostrdLogo} 
                 alt="BoostRD - R&D Tax Specialists" 
-                className="h-12 md:h-16 w-auto transition-all duration-500 group-hover:scale-105"
+                className="h-16 md:h-20 w-auto transition-all duration-500 group-hover:scale-110 group-hover:rotate-1"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
             </div>
