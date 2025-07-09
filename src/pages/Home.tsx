@@ -167,7 +167,7 @@ const Home = () => {
             {[
               {
                 icon: Calculator,
-                title: 'R&D Tax Calculation',
+                title: 'R&D Expenditure Calculation',
                 description: 'Precise calculation of eligible R&D expenditure with detailed documentation and ATO-compliant methodologies.',
                 features: ['Cost allocation analysis', 'Expenditure categorization', 'Benefit optimization']
               },

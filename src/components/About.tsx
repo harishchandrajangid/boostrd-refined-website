@@ -46,19 +46,6 @@ const About = () => {
           </p>
         </div>
 
-        {/* Stats Section */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {stats.map((stat, index) => (
-            <Card key={index} className="p-6 text-center border-2 border-primary/10 hover:border-primary/30 transition-colors">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <stat.icon className="h-8 w-8 text-primary" />
-              </div>
-              <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
-              <div className="font-semibold text-foreground mb-1">{stat.label}</div>
-              <div className="text-sm text-foreground">{stat.desc}</div>
-            </Card>
-          ))}
-        </div>
 
         {/* Story Section */}
         <div className="mb-16">
