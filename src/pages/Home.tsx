@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
         <div className="absolute inset-0 bg-[var(--gradient-hero)]">
           <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-transparent to-primary/20"></div>
           <img 
