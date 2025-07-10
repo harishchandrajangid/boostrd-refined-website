@@ -25,7 +25,7 @@ const FAQ = () => {
     },
     {
       question: "What expenditure can be included in an R&D claim?",
-      answer: "Common eligible expenses include:\n• Salaries and wages of staff involved in R&D\n• Contractor and consultant fees\n• Prototype and testing costs\n• R&D-related software and hardware\n• Overheads proportionally related to R&D work\nWe'll help you identify and justify all eligible costs as part of your claim."
+      answer: "Common eligible expenses include:\n• Salaries and wages of staff involved in R&D\n• Contractor and consultant fees\n• Prototype and testing costs\n• R&D-related software and hardware\n• Overheads proportionally related to R&D work\n\nWe'll help you identify and justify all eligible costs as part of your claim."
     },
     {
       question: "How long does the R&D claim process take?",
@@ -37,7 +37,7 @@ const FAQ = () => {
     },
     {
       question: "What documentation do we need to provide?",
-      answer: "Documentation requirements vary, but typically include:\n• Project plans or technical documentation\n• Timesheets or staff allocation records\n• Experimentation records and test results\n• Invoices and financial records related to R&D spend\nWe'll guide you through what's needed and help you compile everything efficiently."
+      answer: "Documentation requirements vary, but typically include:\n• Project plans or technical documentation\n• Timesheets or staff allocation records\n• Experimentation records and test results\n• Invoices and financial records related to R&D spend\n\nWe'll guide you through what's needed and help you compile everything efficiently."
     },
     {
       question: "How do you ensure compliance with ATO requirements?",
@@ -74,18 +74,18 @@ const FAQ = () => {
 
         {/* FAQ Accordion */}
         <div className="max-w-4xl mx-auto mb-16">
-          <Accordion type="single" collapsible className="space-y-6">
+          <Accordion type="single" collapsible className="w-full space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="card-premium border-0 px-8 py-2"
+                className="bg-white/80 backdrop-blur-sm rounded-lg border border-border px-6 py-2"
               >
-                <AccordionTrigger className="text-left font-semibold hover:no-underline text-lg py-6">
+                <AccordionTrigger className="text-left font-semibold text-lg py-6 hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pt-4 pb-6">
-                  <div className="whitespace-pre-line">
+                <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
+                  <div className="whitespace-pre-line text-base">
                     {faq.answer}
                   </div>
                 </AccordionContent>
