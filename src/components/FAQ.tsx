@@ -13,51 +13,43 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is the R&D Tax Incentive and how does it work?",
-      answer: "The R&D Tax Incentive is an Australian Government program that provides tax offsets for eligible R&D activities. Companies can receive either a refundable tax offset (for companies with turnover under $20M) or a non-refundable tax offset (for larger companies). The incentive reduces the after-tax cost of R&D by up to 43.5%."
+      answer: "The R&D Tax Incentive is an Australian Government program designed to encourage businesses to invest in research and development. It offers tax offsets for eligible R&D activities, helping to reduce your company's tax liability or generate a refundable cash rebate. The program is jointly administered by Department of Industry, Science and Resources (DISR) and the ATO."
     },
     {
       question: "What types of activities qualify as eligible R&D?",
-      answer: "Eligible R&D activities must involve experimentation or investigation to resolve scientific or technological uncertainty. This includes core R&D activities (systematic investigation/experimentation) and supporting R&D activities (directly related to core activities). Examples include software development, engineering design, clinical trials, and process improvements."
+      answer: "Eligible R&D activities typically involve experimental work undertaken to generate new knowledge, improve products, processes, or services. This includes developing prototypes, solving technical problems, or testing different solutions. To qualify, your activities must involve a level of technical uncertainty and follow a systematic approach."
     },
     {
       question: "How much can we claim and what's the potential benefit?",
-      answer: "There's no cap on R&D expenditure that can be claimed. Companies with turnover under $20M can receive up to 43.5% refundable tax offset, while larger companies receive a 38.5% non-refundable tax offset. The average claim processed by BoostRD is $1.2M, with our largest claims exceeding $10M."
+      answer: "Eligible businesses with an aggregated turnover of under $20 million can claim a refundable tax offset of 18.5% above the corporate tax rate, potentially resulting in a 43.5% cash rebate. Larger businesses receive a non-refundable tax offset based on R&D intensity. The actual benefit depends on your R&D spend and tax position."
     },
     {
-      question: "What expenditures can be included in an R&D claim?",
-      answer: "Eligible expenditures include staff salaries (time spent on R&D), contractor costs, materials and consumables, plant and equipment depreciation, clinical trial costs, and other expenses directly related to R&D activities. We help identify and document all eligible costs to maximise your claim."
+      question: "What expenditure can be included in an R&D claim?",
+      answer: "Common eligible expenses include:\n• Salaries and wages of staff involved in R&D\n• Contractor and consultant fees\n• Prototype and testing costs\n• R&D-related software and hardware\n• Overheads proportionally related to R&D work\nWe'll help you identify and justify all eligible costs as part of your claim."
     },
     {
       question: "How long does the R&D claim process take?",
-      answer: "The timeline varies based on project complexity, but typically ranges from 6-12 weeks from engagement to submission. Simple claims can be completed in 6-8 weeks, while complex multi-project claims may take 10-12 weeks. We provide clear timelines and regular progress updates throughout the process."
+      answer: "From initial assessment to submission, the process generally takes 4 to 6 weeks, depending on the complexity of your activities and how quickly supporting documentation is provided. We manage the entire process and keep you informed at every step."
     },
     {
-      question: "Do we need to register with AusIndustry before starting R&D?",
-      answer: "No, you can register with AusIndustry up to 10 months after your income year ends. However, we recommend early engagement to ensure proper documentation and maximise your claim potential. We handle all registration and filing requirements with both AusIndustry and the ATO."
+      question: "Do we need to register with Department of Industry, Science and Resources (DISR) before starting R&D?",
+      answer: "No, but to claim the tax incentive, you must register your R&D activities with Department of Industry, Science and Resources (DISR) each year, after the end of the financial year in which the R&D occurred. BoostRD can handle the registration process and ensure your application is fully compliant and on time."
     },
     {
       question: "What documentation do we need to provide?",
-      answer: "We'll need project documentation, financial records, staff timesheets, contractor agreements, and technical specifications. Don't worry if your documentation isn't perfect – we help clients improve their R&D documentation systems and can work with whatever records you have available."
+      answer: "Documentation requirements vary, but typically include:\n• Project plans or technical documentation\n• Timesheets or staff allocation records\n• Experimentation records and test results\n• Invoices and financial records related to R&D spend\nWe'll guide you through what's needed and help you compile everything efficiently."
     },
     {
       question: "How do you ensure compliance with ATO requirements?",
-      answer: "Our team stays current with all legislative changes and ATO guidance. We prepare comprehensive technical reports, maintain detailed documentation, and follow established precedents. Our 98% success rate and zero audit failures demonstrate our commitment to compliance excellence."
+      answer: "We follow a detailed methodology aligned with the latest guidance from the ATO and the Department of Industry, Science and Resources (DISR). Every claim is prepared and reviewed by experienced R&D tax specialists to ensure it meets all eligibility, substantiation, and compliance requirements.\n\nOur goal is to get it right the first time. We focus on building robust, defensible claims that stand up to scrutiny, helping you avoid unnecessary audits and delays. By taking a proactive, thorough approach, we reduce your risk and maximise your entitlement with confidence."
     },
     {
       question: "What are your fees and when do we pay?",
-      answer: "Our fees are typically 20-25% of the R&D benefit received, with no upfront costs. We only succeed when you succeed. Fees are paid only after you receive your R&D benefit from the ATO. We provide transparent pricing with no hidden costs or surprise fees."
-    },
-    {
-      question: "Can you help with R&D claims for previous years?",
-      answer: "Yes, we can assist with claims for up to 4 previous financial years (subject to registration deadlines). Many clients discover they've missed significant R&D opportunities in past years. We can review your historical activities and identify potential claims you may have missed."
-    },
-    {
-      question: "What happens if we get audited by the ATO?",
-      answer: "While audits are rare (less than 5% of claims), we provide full audit support if selected. Our comprehensive documentation and technical reports are designed to withstand ATO scrutiny. We've successfully supported clients through audits with zero claim reversals in our company history."
+      answer: "Our fees are based on the size and complexity of your R&D activities. As a general guide:\n• We charge the greater of $5,000 or 3% of your eligible R&D expenditure\n• A $3,000 commencement fee is payable when we start work on your claim\n• The balance is due upon lodgement of your R&D application\n\nWe're outcome-focused — you only pay when we deliver. We guarantee our total fee will never exceed the benefit you receive, ensuring a positive return on your claim.\n\nWe also offer a free initial eligibility assessment and will always be upfront if we don't believe there's a worthwhile claim to pursue.\n\nNo hidden fees. No surprises. Just results."
     },
     {
       question: "How do we get started with BoostRD?",
-      answer: "Simply contact us for a free initial consultation. We'll assess your R&D activities, estimate your potential benefit, and explain our process. If there's a good fit, we'll provide a detailed proposal and timeline. Most clients can get started within a week of initial contact."
+      answer: "Getting started is easy. Simply book a free consultation or contact us through our website. We'll assess your eligibility, walk you through the process, and get everything moving quickly — with no obligation to proceed."
     }
   ];
 

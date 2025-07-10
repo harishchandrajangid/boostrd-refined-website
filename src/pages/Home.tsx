@@ -27,7 +27,7 @@ const Home = () => {
           <div className="max-w-5xl mx-auto">
             <div className="animate-fade-up">
               <h1 className="hero-text mb-8">
-                Maximise Your{' '}
+                Boost Your{' '}
                 <span className="text-white font-bold relative">
                   R&D Benefits
                   <div className="absolute -inset-2 bg-primary/30 rounded-lg opacity-50 blur-xl animate-glow"></div>
@@ -64,11 +64,9 @@ const Home = () => {
                 </Button>
               </Link>
               <Link to="/services">
-                <Button 
-                  variant="outline"
-                  className="bg-white/10 border-2 border-white/40 text-white hover:bg-white/20 hover:border-white/60 px-10 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105"
-                >
-                  Explore Services
+                <Button className="btn-premium text-xl px-12 py-6 group">
+                  <span className="relative z-10">Explore Services</span>
+                  <div className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-100 transition-transform duration-500"></div>
                 </Button>
               </Link>
             </div>
