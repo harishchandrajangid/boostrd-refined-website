@@ -81,11 +81,13 @@ const FAQ = () => {
                 value={`item-${index}`}
                 className="card-premium border-0 px-8 py-2"
               >
-                <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                <AccordionTrigger className="text-left font-semibold hover:no-underline text-lg py-6">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pt-4">
-                  {faq.answer}
+                <AccordionContent className="text-muted-foreground leading-relaxed pt-4 pb-6">
+                  <div className="whitespace-pre-line">
+                    {faq.answer}
+                  </div>
                 </AccordionContent>
               </AccordionItem>
             ))}
