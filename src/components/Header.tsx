@@ -19,7 +19,7 @@ const Header = () => {
             <img 
               src={boostrdLogo} 
               alt="BoostRD" 
-              className="h-10 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
 
