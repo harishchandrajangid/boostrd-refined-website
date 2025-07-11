@@ -45,7 +45,7 @@ const Contact = () => {
                 </p>
                 <div className="flex items-center gap-2 text-sm text-foreground/70">
                   <Clock className="h-4 w-4" />
-                  <span>Response within 4 hours</span>
+                  <span>Response within 24 hours</span>
                 </div>
                 <Button 
                   className="w-full bg-white/20 border border-white/30 hover:bg-white/30 text-white font-semibold py-3"
