@@ -50,6 +50,14 @@ const Header = () => {
               FAQ
             </Link>
             <Link 
+              to="/blog"
+              className={`text-sm font-medium transition-colors ${
+                isActive('/blog') ? 'text-primary' : 'text-foreground hover:text-primary'
+              }`}
+            >
+              Blog
+            </Link>
+            <Link 
               to="/rdti-questionnaire"
               className={`text-sm font-medium transition-colors ${
                 isActive('/rdti-questionnaire') ? 'text-primary' : 'text-foreground hover:text-primary'
@@ -107,6 +115,15 @@ const Header = () => {
                 }`}
               >
                 FAQ
+              </Link>
+              <Link 
+                to="/blog"
+                onClick={() => setIsMenuOpen(false)}
+                className={`block py-2 text-sm font-medium ${
+                  isActive('/blog') ? 'text-primary' : 'text-foreground'
+                }`}
+              >
+                Blog
               </Link>
               <Link 
                 to="/rdti-questionnaire"
