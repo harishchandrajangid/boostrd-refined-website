@@ -53,12 +53,6 @@ const Contact = () => {
                 >
                   Send Email
                 </Button>
-                <Button 
-                  className="w-full bg-white/20 border border-white/30 hover:bg-white/30 text-white font-semibold py-3"
-                  onClick={() => window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/'}
-                >
-                  Send Emaill
-                </Button>  
               </div>
             </Card>
 
