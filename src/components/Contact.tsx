@@ -86,9 +86,6 @@ const Contact = () => {
             </Card>
           </div>
 
-          <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank">
-  <button style="padding: 10px 20px; font-size: 16px;">Take Our Assessment</button>
-</a>
 
       
 
