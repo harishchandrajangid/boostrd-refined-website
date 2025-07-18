@@ -84,34 +84,8 @@ const Contact = () => {
                 </Button>
               </div>
             </Card>
-<div class="contact-container">
-  <!-- Email Us -->
-  <div class="contact-card">
-    <h3>Email Us</h3>
-    <p>info@example.com</p>
-  </div>
+          </div>
 
-  <!-- Call Us -->
-  <div class="contact-card">
-    <h3>Call Us</h3>
-    <p>+1 (123) 456-7890</p>
-  </div>
-
-  <!-- ✅ Message Us (Google Form Embed) -->
-  <div class="contact-card">
-    <h3>Message Us</h3>
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform?embedded=true" 
-      width="100%" 
-      height="600" 
-      frameborder="0" 
-      marginheight="0" 
-      marginwidth="0" 
-      style="border: none; overflow: auto;">
-      Loading…
-    </iframe>
-  </div>
-</div>
 
       
 
@@ -149,4 +123,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
