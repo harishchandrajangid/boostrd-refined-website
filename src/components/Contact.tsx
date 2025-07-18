@@ -91,9 +91,6 @@ const Contact = () => {
   <div className="flex justify-center">
     <a
       href="https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="px-6 py-3 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition"
     >
       Open Contact Form
     </a>
