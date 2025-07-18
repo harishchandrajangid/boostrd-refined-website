@@ -89,15 +89,15 @@ const Contact = () => {
 <Card className="card-premium p-8 bg-white/10 border-white/20 mb-16">
   <h3 className="text-2xl font-bold text-center mb-8">Get Your Free R&D Assessment</h3>
   <div className="flex justify-center">
-   <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform?embedded=true" 
-                width="100%" 
-                height="1094" 
-                className="max-w-2xl border-0 rounded-lg"
-                title="Contact Form"
-              >
-                Loading…
-              </iframe>
+  <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform?embedded=true"
+      width="100%"
+      height="1400"
+      className="w-full border-0 rounded-lg"
+      title="Contact Form"
+    >
+      Loading…
+    </iframe>
   </div>
 </Card>
 
