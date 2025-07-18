@@ -101,6 +101,10 @@ const Contact = () => {
               </iframe>
             </div>
           </Card>
+          
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform?embedded=true" target="_blank">
+  <button style="padding: 10px 20px; font-size: 16px;">Take Our Assessment</button>
+</a>
 
           {/* What We Offer */}
           <Card className="card-premium p-10 bg-white/10 border-white/20">
