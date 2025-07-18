@@ -87,21 +87,20 @@ const Contact = () => {
           </div>
 
 {/* Contact Form */}
-          <Card className="card-premium p-8 bg-white/10 border-white/20 mb-16">
-            <h3 className="text-2xl font-bold text-center mb-8">Get Your Free R&D Assessment</h3>
-            <div className="flex justify-center">
-              <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform?embedded=true" 
-                width="100%" 
-                height="1094" 
-                className="max-w-2xl border-0 rounded-lg"
-                title="Contact Form"
-              >
-                Loading…
-              </iframe>
-            </div>
-          </Card>
-      
+<Card className="card-premium p-8 bg-white/10 border-white/20 mb-16">
+  <h3 className="text-2xl font-bold text-center mb-8">Get Your Free R&D Assessment</h3>
+  <div className="flex justify-center">
+    <a 
+      href="https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="px-6 py-3 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition"
+    >
+      Open Contact Form
+    </a>
+  </div>
+</Card>
+
 
           {/* What We Offer */}
           <Card className="card-premium p-10 bg-white/10 border-white/20">
