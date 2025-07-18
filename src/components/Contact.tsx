@@ -84,36 +84,32 @@ const Contact = () => {
                 </Button>
               </div>
             </Card>
-          </div>
-
 <div class="contact-container">
-  <!-- Original Email Us -->
+  <!-- Email Us -->
   <div class="contact-card">
     <h3>Email Us</h3>
     <p>info@example.com</p>
   </div>
 
-  <!-- Original Call Us -->
+  <!-- Call Us -->
   <div class="contact-card">
     <h3>Call Us</h3>
     <p>+1 (123) 456-7890</p>
   </div>
 
-  <!-- ✅ New Google Form Section -->
+  <!-- ✅ Message Us (Google Form Embed) -->
   <div class="contact-card">
     <h3>Message Us</h3>
-    <div style="width:100%; height:600px; overflow:hidden; position:relative;">
-      <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform?embedded=true" 
-        width="100%" 
-        height="100%" 
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0"
-        style="border:0; pointer-events:auto;">
-        Loading…
-      </iframe>
-    </div>
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform?embedded=true" 
+      width="100%" 
+      height="600" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0" 
+      style="border: none; overflow: auto;">
+      Loading…
+    </iframe>
   </div>
 </div>
 
