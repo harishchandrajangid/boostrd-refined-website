@@ -53,6 +53,12 @@ const Contact = () => {
                 >
                   Send Email
                 </Button>
+                <Button 
+                  className="w-full bg-white/20 border border-white/30 hover:bg-white/30 text-white font-semibold py-3"
+                  onClick={() => window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/'}
+                >
+                  Send Emaill
+                </Button>  
               </div>
             </Card>
 
@@ -101,10 +107,7 @@ const Contact = () => {
               </iframe>
             </div>
           </Card>
-          
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform?embedded=true" target="_blank">
-  <button style="padding: 10px 20px; font-size: 16px;">Take Our Assessment</button>
-</a>
+      
 
           {/* What We Offer */}
           <Card className="card-premium p-10 bg-white/10 border-white/20">
