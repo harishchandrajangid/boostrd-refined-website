@@ -92,12 +92,14 @@ const Contact = () => {
               <p className="text-foreground/80 mb-6 text-lg">
                 Ready to discover your R&D tax benefits? Fill out our comprehensive assessment form to get started.
               </p>
-              <Button 
-                className="bg-white text-primary hover:bg-white/90 font-semibold py-4 px-8 text-lg"
-                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform', '_blank')}
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-lg font-semibold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-primary hover:bg-white/90 py-4 px-8"
               >
                 Start Your Free Assessment
-              </Button>
+              </a>
             </div>
           </Card>
 
