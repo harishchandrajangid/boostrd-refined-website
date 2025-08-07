@@ -86,20 +86,20 @@ const Contact = () => {
             </Card>
           </div>
 
-<Card className="card-premium p-8 bg-white/10 border-white/20 mb-16">
-  <h3 className="text-2xl font-bold text-center mb-8">Get Your Free R&D Assessment</h3>
-  <div className="flex justify-center">
-  <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform?embedded=true"
-      width="100%"
-      height="1400"
-      className="w-full border-0 rounded-lg"
-      title="Contact Form"
-    >
-      Loading…
-    </iframe>
-  </div>
-</Card>
+          <Card className="card-premium p-8 bg-white/10 border-white/20 mb-16">
+            <h3 className="text-2xl font-bold text-center mb-8">Get Your Free R&D Assessment</h3>
+            <div className="text-center">
+              <p className="text-foreground/80 mb-6 text-lg">
+                Ready to discover your R&D tax benefits? Fill out our comprehensive assessment form to get started.
+              </p>
+              <Button 
+                className="bg-white text-primary hover:bg-white/90 font-semibold py-4 px-8 text-lg"
+                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeUb74eTTPBjpjV--OUg4lNv-FmTN_Y2nZ-wLSvF7YCJeQ6Cw/viewform', '_blank')}
+              >
+                Start Your Free Assessment
+              </Button>
+            </div>
+          </Card>
 
 
 
